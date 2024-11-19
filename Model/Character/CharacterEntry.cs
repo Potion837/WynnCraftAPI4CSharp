@@ -2,26 +2,26 @@
 
 public class CharacterEntry
 {
-    public string Type { get; set; }
-    public string Nickname { get; set; }
-    public int Level { get; set; }
-    public long Xp { get; set; }
-    public int XpPercent { get; set; }
-    public int TotalLevel { get; set; }
-    public string[] Gamemode { get; set; }
-    public Dictionary<string, object> Meta { get; set; }
+    public string type { get; set; }
+    public string nickname { get; set; }
+    public int level { get; set; }
+    public long xp { get; set; }
+    public int xpPercent { get; set; }
+    public int totalLevel { get; set; }
+    public string[] gamemode { get; set; }
+    public Dictionary<string, object> meta { get; set; }
 
     public override string ToString()
     {
         return $"CharacterEntry{{" +
-               $"gamemode={string.Join(", ", Gamemode ?? Array.Empty<string>())}, " +
-               $"type='{Type}', " +
-               $"nickname='{Nickname}', " +
-               $"level={Level}, " +
-               $"xp={Xp}, " +
-               $"xpPercent={XpPercent}, " +
-               $"totalLevel={TotalLevel}, " +
-               $"meta={string.Join(", ", Meta ?? new())}" +
+               $"gamemode={string.Join(", ", gamemode ?? Array.Empty<string>())}, " +
+               $"type='{type}', " +
+               $"nickname='{nickname}', " +
+               $"level={level}, " +
+               $"xp={xp}, " +
+               $"xpPercent={xpPercent}, " +
+               $"totalLevel={totalLevel}, " +
+               $"meta={string.Join(", ", meta ?? new())}" +
                $"}}";
     }
 }

@@ -9,7 +9,7 @@ public class Player
         public string username { get; set; }
         public bool online { get; set; }
         public string server { get; set; }
-        public double playTime { get; set; }
+        public double playtime { get; set; }
         public DateTime firstJoin { get; set; }
         public DateTime lastJoin { get; set; }
         public string rank { get; set; }

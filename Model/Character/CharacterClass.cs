@@ -2,16 +2,16 @@
 
 public class CharacterClass
 {
-    public CharacterType Type { get; set; }
-    public CharacterType DonorType { get; set; }
-    public int OverallDifficulty { get; set; }
+    public CharacterType type { get; set; }
+    public CharacterType donorType { get; set; }
+    public int overallDifficulty { get; set; }
 
     public override string ToString()
     {
         return $"CharacterClass{{" +
-               $"type={Type}, " +
-               $"donorType={DonorType}, " +
-               $"overallDifficulty={OverallDifficulty}" +
+               $"type={type}, " +
+               $"donorType={donorType}, " +
+               $"overallDifficulty={overallDifficulty}" +
                $"}}";
     }
 }

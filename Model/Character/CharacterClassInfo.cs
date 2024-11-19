@@ -2,20 +2,20 @@
 
 public class CharacterClassInfo
 {
-    public string Id { get; set; }
-    public string Name { get; set; }
-    public string Lore { get; set; }
-    public int OverallDifficulty { get; set; }
-    public Dictionary<string, CharacterArchetype> Archetypes { get; set; }
+    public string id { get; set; }
+    public string name { get; set; }
+    public string lore { get; set; }
+    public int overallDifficulty { get; set; }
+    public Dictionary<string, CharacterArchetype> archetypes { get; set; }
 
     public override string ToString()
     {
         return $"CharacterClassInfo{{" +
-               $"id='{Id}', " +
-               $"name='{Name}', " +
-               $"lore='{Lore}', " +
-               $"overallDifficulty={OverallDifficulty}, " +
-               $"archetypes={string.Join(", ", Archetypes ?? new())}" +
+               $"id='{id}', " +
+               $"name='{name}', " +
+               $"lore='{lore}', " +
+               $"overallDifficulty={overallDifficulty}, " +
+               $"archetypes={string.Join(", ", archetypes ?? new())}" +
                $"}}";
     }
 }
